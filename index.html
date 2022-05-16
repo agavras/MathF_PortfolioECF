@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Mon profolio 2022</title>
+</head>
+
+<body>
+
+    <!-- ///////////////////// ACCUEIL ///////////////////// -->
+    <!-- debut de la section Accueil -->
+    <section id="accueil" class="animate__animated animate__fadeIn animate__1">
+        <a href="#accueil">
+            <img id="btnJourNuit" src="./img/switch.webp" alt="dark switch" />
+        </a>
+    </section>
+
+    <div id="illustration">
+        <a href="#projets">
+            <img id="imgOver" src="./imgProjets/illustration.webp" alt="illustration" />
+        </a>
+        <h1>Mathieu FALEZ</h1>
+        <h2>Illustration & Dev</h2>
+    </div>
+    <!-- fin de la section Accueil -->
+
+    <!-- ///////////////////// PROJET ///////////////////// -->
+    <!-- debut de la section projet -->
+    <section id="projets" class="Empty">
+
+        <!-- 3 bouttons pour 3 projets -->
+        <div>
+            <button id="btnOpenProject1">Projet 1</button>
+            <button id="btnOpenProject2">Projet 2</button>
+            <button id="btnOpenProject3">Projet 3</button>
+        </div>
+
+        <!-- wrapper ThreeJS remplacé par un gif car non compatible GitPage -->
+        <div class="wrapper">
+            <a href="https://github.com/agavras?tab=repositories" target="_blank">
+                <img src="./imgProjets/github.webp" alt="Lien vers mon GitHub" id="imgwrapper" class="empty">
+            </a>
+        </div>
+
+        <!-- élements pour l'anim de fond de la section projet (carrés qui tournent) -->
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- modal pour présenter 3 des projets -->
+        <div id="modal1">
+            <img src="./imgProjets/Afpa3d.webp" alt="image projet Afpa3d" />
+            <p>Modélisation 3d du batiment AFPA</p>
+            <p>de Saint-Étienne-du-Rouvray</p>
+            <p>pour la formation DWWM 2022</p>
+            <button id="btnCloseProject1">Retour</button>
+            <button>Jouer</button>
+        </div>
+
+        <div id="modal2">
+            <img src="./imgProjets/EmbeddedBrowser.webp" alt="image projet EmbeddedBrowser" />
+            <p>Integration d'un navigateur web</p>
+            <p>à l'intérieur d'un jeu vidéo</p>
+            <p>qui est intégré dans une page web</p>
+            <button id="btnCloseProject2">Retour</button>
+            <button>Jouer</button>
+        </div>
+
+        <div id="modal3">
+            <img src="./imgProjets/Impression.webp" alt="image projet Impression" />
+            <p>Application de peinture</p>
+            <p>inspiration gouache traditionnel</p>
+            <p>fonction "timelapse"</p>
+            <button id="btnCloseProject3">Retour</button>
+            <button>Jouer</button>
+        </div>
+
+        <!-- Navbar de fin de page projet -->
+        <nav class="navbar">
+            <a href="#accueil" class="link">Accueil</a>
+            <a href="#projets" class="linkoff">&#x2022;</a>
+            <a href="#projets" class="linkoff">Projets</a>
+            <a href="#projets" class="linkoff">&#x2022;</a>
+            <a href="#contact" class="link">Contact</a>
+        </nav>
+    </section>
+    <!-- fin de la section projet -->
+
+    <!-- ///////////////////// CONTACT ///////////////////// -->
+    <!-- debut de la section contact -->
+    <section id="contact" class="Empty">
+        <div class="navbar">
+            <h2>Mathieu FALEZ</h2>
+            <p>142, rue de l'abreuvoir</p>
+            <p>76116 Catenay</p>
+            <p>06.11.51.27.73</p>
+            <a class="link" href="mailto:math.falez@gmail.com">math.falez@gmail.com</a>
+        </div>
+
+        <!-- validation w3c -->
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border: 0; width: 88px; height: 31px;"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
+            </a>
+        </p>
+
+        <!-- Navbar de fin de page contact -->
+        <nav class="navbar">
+            <a href="#accueil" class="link">Accueil</a>
+            <a href="#contact" class="linkoff">&#x2022;</a>
+            <a href="#projets" class="link"> Projets</a>
+            <a href="#contact" class="linkoff">&#x2022;</a>
+            <a href="#contact" class="linkoff">Contact</a>
+        </nav>
+    </section>
+    <!-- fin de la section contact -->
+
+
+    <!-- ///////////////////// JAVASCRIPT ///////////////////// -->
+    <!-- Javascript pour l'interaction avec la page -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
